@@ -74,6 +74,7 @@ public class TherapeuteController {
 				Photo photoTherapeute = new Photo();
 				photoTherapeute.setSrc(filename);
 				therapeute.setPhoto(photoTherapeute);
+				photoRepository.save(photoTherapeute);
 			}
 
 			return therapeuteRepository.save(therapeute);
